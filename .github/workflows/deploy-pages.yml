@@ -1,0 +1,55 @@
+name: Deploy Pages
+
+on:
+  push:
+    branches:
+      - master
+      - '3.14'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        version: [ '3.14' ]
+    steps:
+      - uses: actions/setup-python@master
+        with:
+          python-version: 3.12
+      - uses: actions/checkout@master
+        with:
+          repository: python/cpython
+          ref: ${{ matrix.version }}
+      - run: make venv
+        working-directory: ./Doc
+      - uses: actions/checkout@master
+        with:
+          ref: ${{ matrix.version }}
+          path: Doc/locales/vi/LC_MESSAGES
+      - uses: sphinx-doc/github-problem-matcher@v1.1
+      - run: make -e SPHINXOPTS="--color -D language='vi' --keep-going" html
+        working-directory: ./Doc
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: Doc/build/html
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
