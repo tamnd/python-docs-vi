@@ -37,7 +37,7 @@ jobs:
           ref: ${{ matrix.version }}
           path: Doc/locales/vi/LC_MESSAGES
       - uses: sphinx-doc/github-problem-matcher@v1.1
-      - run: make -e SPHINXOPTS="--color -D language='vi' --keep-going" html
+      - run: make -e SPHINXERRORHANDLING="--keep-going" SPHINXOPTS="--color -D language='vi'" html
         working-directory: ./Doc
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
