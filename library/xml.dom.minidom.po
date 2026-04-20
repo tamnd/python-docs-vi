@@ -399,7 +399,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "The encoding name included in the XML output should conform to the "

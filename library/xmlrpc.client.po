@@ -692,7 +692,7 @@ msgid "See :ref:`simplexmlrpcserver-example`."
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "This approach has been first presented in `a discussion on xmlrpc.com "

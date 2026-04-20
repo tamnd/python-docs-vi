@@ -183,7 +183,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid "A problem with the GNU Readline package may prevent this."
 msgstr ""

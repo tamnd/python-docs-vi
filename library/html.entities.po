@@ -54,7 +54,7 @@ msgid "A dictionary that maps Unicode code points to HTML4 entity names."
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "See https://html.spec.whatwg.org/multipage/named-characters.html#named-"

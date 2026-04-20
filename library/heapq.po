@@ -498,7 +498,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "The disk balancing algorithms which are current, nowadays, are more annoying "
