@@ -114,7 +114,7 @@ msgid ""
 "`Documentation Translations <https://devguide.python.org/documentation/"
 "translating/>`_"
 msgstr ""
-"`Bản dịch Tài Liệu<https://devguide.python.org/documentation/translating/>`_"
+"`Bản dịch Tài Liệu <https://devguide.python.org/documentation/translating/>`_"
 
 msgid ""
 "A list of GitHub pages for documentation translation and their primary "
