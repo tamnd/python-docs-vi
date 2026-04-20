@@ -115,7 +115,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "\"Cheese Shop\" is a Monty Python sketch: a customer enters a cheese shop, "

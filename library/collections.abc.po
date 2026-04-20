@@ -373,7 +373,7 @@ msgid "``__buffer__``"
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "These ABCs override :meth:`~abc.ABCMeta.__subclasshook__` to support testing "

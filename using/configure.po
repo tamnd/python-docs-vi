@@ -1891,7 +1891,7 @@ msgid "Linker flags used for building the interpreter object files."
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "``git clean -fdx`` is an even more extreme way to \"clean\" your checkout. "

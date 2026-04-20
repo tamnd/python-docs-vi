@@ -266,7 +266,7 @@ msgstr "# -*- coding: encoding -*-"
 
 msgid "where *encoding* is one of the valid :mod:`codecs` supported by Python."
 msgstr ""
-"trong đó encoding là một trong những :mod:`codecs` hợp lệ được Python hỗ "
+" trong đó encoding là một trong những :mod:`codecs` hợp lệ được Python hỗ "
 "trợ."
 
 msgid ""
@@ -296,7 +296,7 @@ msgstr ""
 "# -*- coding: cp1252 -*-"
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "On Unix, the Python 3.x interpreter is by default not installed with the "

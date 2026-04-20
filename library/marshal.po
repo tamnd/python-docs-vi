@@ -247,7 +247,7 @@ msgid "Support for :class:`slice` objects"
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "The name of this module stems from a bit of terminology used by the "
