@@ -24,13 +24,13 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "Built-in Functions"
-msgstr " Các hàm tích hợp sẵn"
+msgstr "Các hàm tích hợp sẵn"
 
 msgid ""
 "The Python interpreter has a number of functions and types built into it "
 "that are always available.  They are listed here in alphabetical order."
 msgstr ""
-" Trình thông dịch Python có sẵn một số hàm và kiểu dữ liệu tichs hợp sẵn "
+"Trình thông dịch Python có sẵn một số hàm và kiểu dữ liệu tichs hợp sẵn "
 "luôn có thể sử dụng được. Chúng được liệt kê dưới đây theo thứ tự bảng chữ "
 "cái."
 
@@ -325,7 +325,7 @@ msgstr ""
 
 msgid "Note: Unlike :func:`iter`, :func:`aiter` has no 2-argument variant."
 msgstr ""
-" Lưu ý: Không giống như :func:`iter`, :func:`aiter` không có biến thể 2 đối "
+"Lưu ý: Không giống như :func:`iter`, :func:`aiter` không có biến thể 2 đối "
 "số."
 
 msgid ""
@@ -2725,7 +2725,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "Note that the parser only accepts the Unix-style end of line convention. If "

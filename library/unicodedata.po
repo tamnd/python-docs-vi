@@ -240,7 +240,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid "https://www.unicode.org/Public/16.0.0/ucd/NameAliases.txt"
 msgstr ""

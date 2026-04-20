@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 msgid "The Python Tutorial"
-msgstr " Tài liệu hướng dẫn Python"
+msgstr "Tài liệu hướng dẫn Python"
 
 msgid ""
 "This tutorial is designed for *programmers* that are new to the Python "

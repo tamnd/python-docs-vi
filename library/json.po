@@ -934,7 +934,7 @@ msgid "Show the help message."
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "As noted in `the errata for RFC 7159 <https://www.rfc-editor.org/"

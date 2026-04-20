@@ -1526,7 +1526,7 @@ msgid "High-performance serialization of built-in types."
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid "Don't confuse this with the :mod:`marshal` module"
 msgstr ""

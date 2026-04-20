@@ -2292,7 +2292,7 @@ msgid "Assignment expression"
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "While ``abs(x%y) < abs(y)`` is true mathematically, for floats it may not be "

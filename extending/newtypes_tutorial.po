@@ -1869,7 +1869,7 @@ msgid ""
 msgstr ""
 
 msgid "Footnotes"
-msgstr " Chú thích"
+msgstr "Chú thích"
 
 msgid ""
 "This is true when we know that the object is a basic type, like a string or "
