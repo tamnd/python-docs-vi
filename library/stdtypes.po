@@ -7118,7 +7118,7 @@ msgid "If you need to disable it entirely, set it to ``0``."
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "Additional information on these special methods may be found in the Python "

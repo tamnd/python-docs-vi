@@ -749,7 +749,7 @@ msgid "Gustavo Niemeyer"
 msgstr ""
 
 msgid "Footnotes"
-msgstr "Chú thích"
+msgstr " Chú thích"
 
 msgid ""
 "The default locale directory is system dependent; for example, on Red Hat "
