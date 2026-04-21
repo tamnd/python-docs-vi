@@ -1222,7 +1222,7 @@ msgid "z"
 msgstr ""
 
 msgid "# (hash)"
-msgstr ""
+msgstr "# (hash)"
 
 msgid ", (comma)"
 msgstr ""

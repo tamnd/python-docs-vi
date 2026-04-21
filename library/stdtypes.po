@@ -7583,7 +7583,7 @@ msgid ". (dot)"
 msgstr ""
 
 msgid "# (hash)"
-msgstr ""
+msgstr "# (hash)"
 
 msgid "space"
 msgstr ""
