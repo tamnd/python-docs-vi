@@ -29,10 +29,10 @@ msgid "**Source code:** :source:`Lib/string/__init__.py`"
 msgstr ""
 
 msgid ":ref:`textseq`"
-msgstr ""
+msgstr ":ref:`textseq`"
 
 msgid ":ref:`string-methods`"
-msgstr ""
+msgstr ":ref:`string-methods`"
 
 msgid "String constants"
 msgstr ""
