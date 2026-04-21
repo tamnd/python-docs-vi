@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   update-translation:
@@ -65,3 +66,11 @@ jobs:
         with:
           branch: ${{ matrix.version }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Trigger downstream workflows
+        if: env.SIGNIFICANT_CHANGES
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run deploy-pages.yml --ref ${{ matrix.version }}
+          gh workflow run test-build.yml  --ref ${{ matrix.version }}
+          gh workflow run po-lint.yml     --ref ${{ matrix.version }}
