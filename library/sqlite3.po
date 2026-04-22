@@ -774,7 +774,7 @@ msgid "Added the *deterministic* parameter."
 msgstr ""
 
 msgid "Example:"
-msgstr ""
+msgstr "Ví dụ:"
 
 msgid ""
 ">>> import hashlib\n"

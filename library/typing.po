@@ -1159,7 +1159,7 @@ msgid ""
 msgstr ""
 
 msgid "Example:"
-msgstr ""
+msgstr "Ví dụ:"
 
 msgid ""
 "def run_query(sql: LiteralString) -> None:\n"

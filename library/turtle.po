@@ -2659,7 +2659,7 @@ msgid "a color for the poly's outline (if given)"
 msgstr ""
 
 msgid "Example:"
-msgstr ""
+msgstr "Ví dụ:"
 
 msgid ""
 ">>> poly = ((0,0),(10,-5),(0,10),(-10,-5))\n"
