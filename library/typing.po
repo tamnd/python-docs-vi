@@ -3651,7 +3651,7 @@ msgid ""
 msgstr ""
 
 msgid "Parameters"
-msgstr ""
+msgstr "Tham số"
 
 msgid ""
 "Indicates whether the ``eq`` parameter is assumed to be ``True`` or "
