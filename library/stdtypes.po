@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-21 15:07+0000\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
 "Last-Translator: Nguyen Duc Tam, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
@@ -162,7 +162,7 @@ msgid "This table summarizes the comparison operations:"
 msgstr ""
 
 msgid "Meaning"
-msgstr ""
+msgstr "Ý nghĩa"
 
 msgid "``<``"
 msgstr ""
@@ -1617,6 +1617,8 @@ msgid ""
 "*reverse* is a boolean value.  If set to ``True``, then the list elements "
 "are sorted as if each comparison were reversed."
 msgstr ""
+"*reverse* là một giá trị boolean. Nếu đặt thành ``True``, các phần tử danh "
+"sách được sắp xếp như thể mỗi phép so sánh bị đảo ngược."
 
 msgid ""
 "This method modifies the sequence in place for economy of space when sorting "
@@ -1635,6 +1637,8 @@ msgstr ""
 msgid ""
 "For sorting examples and a brief sorting tutorial, see :ref:`sortinghowto`."
 msgstr ""
+"Để biết ví dụ về sắp xếp và hướng dẫn ngắn về sắp xếp, xem :ref:"
+"`sortinghowto`."
 
 msgid ""
 "While a list is being sorted, the effect of attempting to mutate, or even "
@@ -3642,7 +3646,7 @@ msgid ""
 msgstr ""
 
 msgid "``'+'``"
-msgstr ""
+msgstr "``'+'``"
 
 msgid ""
 "A sign character (``'+'`` or ``'-'``) will precede the conversion (overrides "
@@ -3682,7 +3686,7 @@ msgid "Obsolete type -- it is identical to ``'d'``."
 msgstr ""
 
 msgid "``'x'``"
-msgstr ""
+msgstr "``'x'``"
 
 msgid "Signed hexadecimal (lowercase)."
 msgstr ""
@@ -3737,7 +3741,7 @@ msgid "Single character (accepts integer or single character string)."
 msgstr ""
 
 msgid "``'r'``"
-msgstr ""
+msgstr "``'r'``"
 
 msgid "String (converts any Python object using :func:`repr`)."
 msgstr ""
@@ -3749,7 +3753,7 @@ msgid "String (converts any Python object using :func:`str`)."
 msgstr ""
 
 msgid "``'a'``"
-msgstr ""
+msgstr "``'a'``"
 
 msgid "String (converts any Python object using :func:`ascii`)."
 msgstr ""
@@ -4764,7 +4768,7 @@ msgid "Single byte (accepts integer or single byte objects)."
 msgstr ""
 
 msgid "``'b'``"
-msgstr ""
+msgstr "``'b'``"
 
 msgid ""
 "Bytes (any object that follows the :ref:`buffer protocol <bufferobjects>` or "
@@ -7151,7 +7155,7 @@ msgid "types"
 msgstr ""
 
 msgid "statement"
-msgstr ""
+msgstr "câu lệnh"
 
 msgid "if"
 msgstr ""
@@ -7166,7 +7170,7 @@ msgid "value"
 msgstr ""
 
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
 msgid "operations"
 msgstr ""
@@ -7235,7 +7239,7 @@ msgid "is not"
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "numeric"
 msgstr ""
@@ -7301,7 +7305,7 @@ msgid "arithmetic"
 msgstr ""
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
 msgid "int"
 msgstr ""
@@ -7346,7 +7350,7 @@ msgid "conjugate() (complex number method)"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "math"
 msgstr ""
@@ -7469,7 +7473,7 @@ msgid "bytearray"
 msgstr ""
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "assignment"
 msgstr ""
@@ -7481,7 +7485,7 @@ msgid "range"
 msgstr ""
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
 msgid "text sequence type"
 msgstr ""
@@ -7508,7 +7512,7 @@ msgid "re"
 msgstr ""
 
 msgid "universal newlines"
-msgstr ""
+msgstr "ký tự xuống dòng phổ quát"
 
 msgid "str.splitlines method"
 msgstr ""
@@ -7673,7 +7677,7 @@ msgid "__code__ (function object attribute)"
 msgstr ""
 
 msgid "exec"
-msgstr ""
+msgstr "exec"
 
 msgid "eval"
 msgstr ""

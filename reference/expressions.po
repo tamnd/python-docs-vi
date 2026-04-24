@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Nguyen Duc Tam, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
@@ -2400,10 +2400,10 @@ msgid "data"
 msgstr ""
 
 msgid "type"
-msgstr ""
+msgstr "type"
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "parenthesized form"
 msgstr ""
@@ -2559,7 +2559,7 @@ msgid "AttributeError"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "subscription"
 msgstr ""
@@ -2571,7 +2571,7 @@ msgid "mapping"
 msgstr ""
 
 msgid "string"
-msgstr ""
+msgstr "chuỗi"
 
 msgid "item"
 msgstr ""
@@ -2616,7 +2616,7 @@ msgid "user-defined function"
 msgstr ""
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
 msgid "method"
 msgstr ""
@@ -2814,7 +2814,7 @@ msgid "Conditional"
 msgstr ""
 
 msgid "Boolean"
-msgstr ""
+msgstr "Boolean"
 
 msgid "not"
 msgstr ""

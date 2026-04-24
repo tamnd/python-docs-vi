@@ -5,6 +5,7 @@
 #
 # Translators:
 # python-doc bot, 2025
+# Nguyen Duc Tam, 2026
 #
 #, fuzzy
 msgid ""
@@ -13,7 +14,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-04-23 15:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:01+0000\n"
-"Last-Translator: python-doc bot, 2025\n"
+"Last-Translator: Nguyen Duc Tam, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
 "vi/)\n"
 "MIME-Version: 1.0\n"
@@ -1153,6 +1154,8 @@ msgid ""
 "Raises an :ref:`auditing event <auditing>` ``open`` with arguments ``path``, "
 "``mode``, ``flags``."
 msgstr ""
+"Kích hoạt :ref:`sự kiện kiểm tra <auditing>` ``open`` với các đối số "
+"``path``, ``mode``, ``flags``."
 
 msgid ""
 "This function is intended for low-level I/O.  For normal usage, use the "
@@ -1169,6 +1172,9 @@ msgid ""
 "exception, the function now retries the system call instead of raising an :"
 "exc:`InterruptedError` exception (see :pep:`475` for the rationale)."
 msgstr ""
+"Nếu lời gọi hệ thống bị gián đoạn và trình xử lý tín hiệu không kích hoạt "
+"ngoại lệ, hàm hiện thử lại lời gọi hệ thống thay vì kích hoạt ngoại lệ :exc:"
+"`InterruptedError` (xem :pep:`475` để biết lý do)."
 
 msgid "Accepts a :term:`path-like object`."
 msgstr ""
@@ -5398,7 +5404,7 @@ msgid "deleting"
 msgstr "đang xóa"
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "pty"
 msgstr ""

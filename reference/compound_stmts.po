@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.14\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-17 14:50+0000\n"
+"POT-Creation-Date: 2026-04-23 15:47+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Nguyen Duc Tam, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
@@ -2163,7 +2163,7 @@ msgid "compound"
 msgstr ""
 
 msgid "statement"
-msgstr ""
+msgstr "câu lệnh"
 
 msgid "clause"
 msgstr ""
@@ -2226,13 +2226,13 @@ msgid "list"
 msgstr ""
 
 msgid "object"
-msgstr ""
+msgstr "object"
 
 msgid "sequence"
 msgstr ""
 
 msgid "built-in function"
-msgstr ""
+msgstr "hàm tích hợp sẵn"
 
 msgid "range"
 msgstr ""
@@ -2253,10 +2253,10 @@ msgid "except clause"
 msgstr ""
 
 msgid "module"
-msgstr ""
+msgstr "module"
 
 msgid "sys"
-msgstr ""
+msgstr "sys"
 
 msgid "traceback"
 msgstr ""
