@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - master
+      - "3.15"
     paths:
       - ".github/workflows/transifex-pull.yml"
   schedule:
