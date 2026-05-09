@@ -35,20 +35,10 @@ jobs:
           pip install requests cogapp polib transifex-python sphinx-intl blurb six
           curl -o- https://raw.githubusercontent.com/transifex/cli/master/install.sh | bash
         working-directory: /usr/local/bin
-      - name: Resolve base ref
-        id: base-ref
-        run: |
-          if git ls-remote --exit-code --heads "https://github.com/${{ github.repository }}.git" "${{ matrix.version }}" >/dev/null; then
-            echo "ref=${{ matrix.version }}" >> "$GITHUB_OUTPUT"
-          else
-            echo "ref=${{ github.event.repository.default_branch }}" >> "$GITHUB_OUTPUT"
-          fi
       - uses: actions/checkout@v6
         with:
-          ref: ${{ steps.base-ref.outputs.ref }}
+          ref: ${{ matrix.version }}
           fetch-depth: 0
-      - name: Ensure target branch
-        run: git switch -C "${{ matrix.version }}"
       - run: curl -O https://raw.githubusercontent.com/python-docs-translations/transifex-automations/master/sample-workflows/transifex-util.py
       - run: chmod +x transifex-util.py
       - run: ./transifex-util.py recreate_tx_config --language vi --project-slug python-newest --version ${{ matrix.version }}
