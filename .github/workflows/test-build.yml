@@ -26,9 +26,17 @@ jobs:
           ref: ${{ matrix.version }}
       - run: make venv
         working-directory: ./Doc
+      - name: Resolve translation ref
+        id: translation-ref
+        run: |
+          if git ls-remote --exit-code --heads "https://github.com/${{ github.repository }}.git" "${{ matrix.version }}" >/dev/null; then
+            echo "ref=${{ matrix.version }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@master
         with:
-          ref: ${{ matrix.version }}
+          ref: ${{ steps.translation-ref.outputs.ref }}
           path: Doc/locales/vi/LC_MESSAGES
       - run: git pull
         working-directory: ./Doc/locales/vi/LC_MESSAGES
