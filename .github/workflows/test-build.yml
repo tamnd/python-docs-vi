@@ -2,10 +2,10 @@ name: Test Build Workflow
 
 on:
   schedule:
-    - cron: '0 0 * * *'
+    - cron: "0 0 * * *"
   push:
     branches:
-      - '*'
+      - "*"
   workflow_dispatch:
 
 jobs:
@@ -14,8 +14,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [ '3.14' ]
-        format: [ html, latex, epub ]
+        version: ["3.15"]
+        format: [html, latex, epub]
     steps:
       - uses: actions/setup-python@master
         with:
@@ -26,9 +26,17 @@ jobs:
           ref: ${{ matrix.version }}
       - run: make venv
         working-directory: ./Doc
+      - name: Resolve translation ref
+        id: translation-ref
+        run: |
+          if git ls-remote --exit-code --heads "https://github.com/${{ github.repository }}.git" "${{ matrix.version }}" >/dev/null; then
+            echo "ref=${{ matrix.version }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+          fi
       - uses: actions/checkout@master
         with:
-          ref: ${{ matrix.version }}
+          ref: ${{ steps.translation-ref.outputs.ref }}
           path: Doc/locales/vi/LC_MESSAGES
       - run: git pull
         working-directory: ./Doc/locales/vi/LC_MESSAGES
@@ -47,14 +55,21 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        version: [ '3.14' ]
-    needs: [ 'build-translation' ]
+        version: ["3.15"]
+    needs: ["build-translation"]
     steps:
       - uses: actions/download-artifact@master
         with:
           name: build-${{ matrix.version }}-latex
       - run: sudo apt-get update
-      - run: sudo apt-get install -y latexmk texlive-xetex fonts-freefont-otf xindy
+      - run: sudo apt-get install -y latexmk texlive-xetex fonts-freefont-otf xindy librsvg2-bin
+      - name: Convert SVG assets for LaTeX
+        run: |
+          shopt -s nullglob
+          for svg in *.svg; do
+            rsvg-convert -f pdf -o "${svg%.svg}.pdf" "$svg"
+          done
+          perl -0pi -e 's/\{([^{}]+)\}\.svg/\{$1\}.pdf/g' ./*.tex
       - run: make
       - uses: actions/upload-artifact@master
         with:
