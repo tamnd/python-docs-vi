@@ -62,14 +62,15 @@ jobs:
         run: |
           git config --local user.email github-actions@github.com
           git config --local user.name "GitHub Action's update-translation job"
+      - run: git add . ':!transifex-util.py'
       - name: Filter files
         run: |
-          ! git diff -I'^"POT-Creation-Date: ' \
+          ! git diff --cached \
+                     -I'^"POT-Creation-Date: ' \
                      -I'^"Language-Team: ' \
                      -I'^# ' -I'^"Last-Translator: ' \
                      --exit-code \
-            && echo "SIGNIFICANT_CHANGES=1" >> $GITHUB_ENV || exit 0
-      - run: git add . ':!transifex-util.py'
+            && echo "SIGNIFICANT_CHANGES=1" >> "$GITHUB_ENV" || exit 0
       - run: git commit -m 'Update translation from Transifex'
         if: env.SIGNIFICANT_CHANGES
       - uses: ad-m/github-push-action@v1.1.0
