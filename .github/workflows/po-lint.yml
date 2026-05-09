@@ -17,7 +17,7 @@ jobs:
         version: ["3.15"]
     continue-on-error: true
     steps:
-      - uses: actions/setup-python@master
+      - uses: actions/setup-python@v6
         with:
           python-version: 3
       - run: pip install sphinx-lint
@@ -29,7 +29,7 @@ jobs:
           else
             echo "ref=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
           fi
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v6
         with:
           ref: ${{ steps.translation-ref.outputs.ref }}
       - uses: rffontenelle/sphinx-lint-problem-matcher@v1.0.0

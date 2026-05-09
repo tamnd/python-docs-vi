@@ -17,10 +17,10 @@ jobs:
         version: ["3.15"]
         format: [html, latex, epub]
     steps:
-      - uses: actions/setup-python@master
+      - uses: actions/setup-python@v6
         with:
           python-version: 3.12
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v6
         with:
           repository: python/cpython
           ref: ${{ matrix.version }}
@@ -34,7 +34,7 @@ jobs:
           else
             echo "ref=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
           fi
-      - uses: actions/checkout@master
+      - uses: actions/checkout@v6
         with:
           ref: ${{ steps.translation-ref.outputs.ref }}
           path: Doc/locales/vi/LC_MESSAGES
@@ -45,7 +45,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
       - run: make -e SPHINXOPTS="--color -D language='vi' -W --keep-going" ${{ matrix.format }}
         working-directory: ./Doc
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v7
         if: success() || failure()
         with:
           name: build-${{ matrix.version }}-${{ matrix.format }}
@@ -58,7 +58,7 @@ jobs:
         version: ["3.15"]
     needs: ["build-translation"]
     steps:
-      - uses: actions/download-artifact@master
+      - uses: actions/download-artifact@v8
         with:
           name: build-${{ matrix.version }}-latex
       - run: sudo apt-get update
@@ -71,7 +71,7 @@ jobs:
           done
           perl -0pi -e 's/\{([^{}]+)\}\.svg/\{$1\}.pdf/g' ./*.tex
       - run: make
-      - uses: actions/upload-artifact@master
+      - uses: actions/upload-artifact@v7
         with:
           name: build-${{ matrix.version }}-pdf
           path: ./*.pdf
