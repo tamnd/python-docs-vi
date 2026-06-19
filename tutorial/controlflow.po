@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.15\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-02 00:16+0000\n"
+"POT-Creation-Date: 2026-06-17 16:52+0000\n"
 "PO-Revision-Date: 2025-09-16 00:02+0000\n"
 "Last-Translator: Nguyen Duc Tam, 2026\n"
 "Language-Team: Vietnamese (https://app.transifex.com/python-doc/teams/5390/"
@@ -2259,49 +2259,49 @@ msgid "statement"
 msgstr "câu lệnh"
 
 msgid "for"
-msgstr ""
+msgstr "for"
 
 msgid "..."
 msgstr "..."
 
 msgid "ellipsis literal"
-msgstr ""
+msgstr "ký tự viết tắt ellipsis"
 
 msgid "documentation strings"
-msgstr ""
+msgstr "chuỗi tài liệu"
 
 msgid "docstrings"
-msgstr ""
+msgstr "docstrings"
 
 msgid "strings, documentation"
-msgstr ""
+msgstr "strings, documentation"
 
 msgid "* (asterisk)"
 msgstr "* (asterisk)"
 
 msgid "in function calls"
-msgstr ""
+msgstr "trong các lời gọi hàm"
 
 msgid "**"
 msgstr "**"
 
 msgid "function"
-msgstr ""
+msgstr "hàm"
 
 msgid "annotations"
-msgstr ""
+msgstr " chú thích"
 
 msgid "->"
 msgstr "->"
 
 msgid "function annotations"
-msgstr ""
+msgstr " chú thích hàm"
 
 msgid ": (colon)"
 msgstr ": (colon)"
 
 msgid "coding"
-msgstr ""
+msgstr "mã"
 
 msgid "style"
-msgstr ""
+msgstr "style"
